@@ -130,6 +130,15 @@ local header = {
         [[   /\ \/\ \/\  __//\ \_\ \ \ \_/ |\ \ \/\ \/\ \/\ \]],
         [[   \ \_\ \_\ \____\ \____/\ \___/  \ \_\ \_\ \_\ \_\]],
         [[    \/_/\/_/\/____/\/___/  \/__/    \/_/\/_/\/_/\/_/]],
+        
+        [[   ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗]],
+        [[   ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║]],
+        [[   ██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║]],
+        [[   ██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║]],
+        [[   ██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║]],
+        [[   ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝]],
+                                                  
+
     },
     opts = {
         position = "center",
@@ -166,11 +175,10 @@ local buttons = {
     val = {
         { type = "text", val = "Quick links", opts = { hl = "SpecialComment", position = "center" } },
         { type = "padding", val = 1 },
-        dashboard.button("e", "  New file", "<cmd>ene<CR>"),
-        dashboard.button("SPC f f", "  Find file"),
-        dashboard.button("SPC f g", "  Live grep"),
-        dashboard.button("c", "  Configuration", "<cmd>cd ~/.config/nvim/ <CR>"),
-        dashboard.button("u", "  Update plugins", "<cmd>PackerSync<CR>"),
+        dashboard.button("SPC p v", "  Explore")
+        dashboard.button("SPC s f", "  Find file"),
+        dashboard.button("SPC s g", "  Live grep"),
+        dashboard.button("SPC s d", "  Diagnostics"),
         dashboard.button("q", "  Quit", "<cmd>qa<CR>"),
     },
     position = "center",
